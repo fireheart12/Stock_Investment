@@ -98,3 +98,9 @@ This heat map could be used in order to understand the *available stock volume's
 
 # (V) Hyperparameters :
 
+Our machine learning model is based on two hyperparameters which are :
+* **Time Step** : Number of days in the past our model will look at in order to predict the price on the present day. For illustration, if we set *time_step = 7* then for predicting the price on **n th** day, our model will analyze all the prices from **n-1** to **n-7** days. This approach is relatively more accurate than using a traditional machine learning algorithm - *such as polynomial linear regression* - as we consider only recently reported prices rather than the whole dataset at once. 
+* **Days** : Number of days in the end for which we have to predict the prices for. These will be in our validation/test set.
+
+# (VI) Scaling : 
+
