@@ -25,9 +25,44 @@ Some stock insights from the datasets :
 ![](https://github.com/CodingWitcher/Stock_Investment/blob/master/pics_for_readme/TESLA.png)
 
 **Amazon** : 
+
 ![](https://github.com/CodingWitcher/Stock_Investment/blob/master/pics_for_readme/Amazon.png)
 
 # (III) Libraries Used : 
+
+## Numpy : 
+
+Fundamental package for scientific computing in Python3, helping us in creating and managing n-dimensional tensors. A vector can be regarded as a 1-D tensor, matrix as 2-D, and so on. 
+
+![](https://github.com/CodingWitcher/Stock_Investment/blob/master/pics_for_readme/tensor.jpg) 
+
+## Pandas : 
+
+Pandas is a software library written for the Python programming language for data manipulation and analysis. In particular, it offers data structures and operations for manipulating numerical tables and time series.
+
+![](https://github.com/CodingWitcher/Stock_Investment/blob/master/pics_for_readme/pandas.jpeg)
+
+## Matplotlib : 
+
+Matplotlib is a plotting library for the Python programming language and its numerical mathematics extension NumPy. It provides an object-oriented API for embedding plots into applications using general-purpose GUI toolkits like Tkinter, wxPython, Qt, or GTK+. 
+
+![](https://github.com/CodingWitcher/Stock_Investment/blob/master/pics_for_readme/matplotlib_intro.png)
+
+## Seaborn : 
+
+Seaborn is a Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics. 
+
+## Tensorflow's Keras API
+
+Is an open source deep learning framework for dataflow and differentiable programming. It’s created and maintained by Google.
+
+![](https://github.com/CodingWitcher/Stock_Investment/blob/master/pics_for_readme/tfkeras.png)
+
+## TQDM : 
+
+Is a progress bar library with good support for nested loops and Jupyter notebooks.
+
+# (IV) Exploratory Data Analysis(EDA) : 
 
 
 
