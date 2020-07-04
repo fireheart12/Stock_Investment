@@ -64,6 +64,37 @@ Is a progress bar library with good support for nested loops and Jupyter noteboo
 
 # (IV) Exploratory Data Analysis(EDA) : 
 
+When we’re getting started with a machine learning (ML) project, one critical principle to keep in mind is that data is everything. It is often said that if ML is the rocket engine, then the fuel is the (high-quality) data fed to ML algorithms. However, deriving truth and insight from a pile of data can be a complicated and error-prone job. To have a solid start for our ML project, it always helps to analyze the data up front.
 
+During EDA, it’s important that we get a deep understanding of:
 
+* The **properties of the data**, such as schema and statistical properties;
+* The **quality of the data**, like missing values and inconsistent data types;
+* The **predictive power of the data**, such as correlation of features against target.
+
+This project didn't require profound EDA as the data was *time-series*. Only thing to enusure in every dataset from AMD to Tesla was to ensure we don't have missing values. Fortunately, that didn't turn out to be true.
+
+Using pandas *info()* function of the dataframe structure we found that all rows of the **Open** prices were filled. 
+
+Excerpt from AMD's data :
+
+![](https://github.com/CodingWitcher/Stock_Investment/blob/master/pics_for_readme/AMD%20entries.png)
+
+Excerpt from Tesla's data :
+
+![](https://github.com/CodingWitcher/Stock_Investment/blob/master/pics_for_readme/Tesla%20entries.png)
+
+Also, open, close, day's max and day's min were found highly correlated which is otherwise obvious too. However, just to visualize this we plotted the correlation extent using Seaborn's **heatmap**.
+
+*Tesla's heatmap*
+
+![](https://github.com/CodingWitcher/Stock_Investment/blob/master/pics_for_readme/tesla_heapmap.png)
+
+*AMD's heaptmap*
+
+![](https://github.com/CodingWitcher/Stock_Investment/blob/master/pics_for_readme/AMD_heatmap.png)
+
+This heat map could be used in order to understand the *available stock volume's* correlation with other prices(open, close, max, min) for future applications. However, in this project, we keep ourselves to *open stock prices* prediction based on historical data. 
+
+# (V) Hyperparameters :
 
