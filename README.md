@@ -74,7 +74,7 @@ During EDA, it’s important that we get a deep understanding of:
 * The **quality of the data**, like missing values and inconsistent data types;
 * The **predictive power of the data**, such as correlation of features against target.
 
-This project didn't require profound EDA as the data was *time-series*. Only thing to enusure in every dataset from AMD to Tesla was to ensure we don't have missing values. Fortunately, that didn't turn out to be true.
+This project didn't require profound EDA as the data was *time-series*. Only thing to enusure in every dataset from AMD to Tesla were the missing values. Fortunately, that didn't turn out to be true.
 
 Using pandas *info()* function of the dataframe structure we found that all rows of the **Open** prices were filled. 
 
