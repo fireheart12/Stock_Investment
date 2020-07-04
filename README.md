@@ -148,6 +148,8 @@ Humans don’t start their thinking from scratch every second. As we read this p
 
 **Long Short Term Memory networks – usually just called “LSTMs” – are a special kind of RNN, capable of learning long-term dependencies**.
 
+*A LSTM chain* : 
+
 ![](https://github.com/CodingWitcher/Stock_Investment/blob/master/pics_for_readme/LSTM3-chain.png)
 
 The entire process of the working behind a RNN is beautifully illustrated at : **https://colah.github.io/posts/2015-08-Understanding-LSTMs/**
@@ -155,4 +157,47 @@ The entire process of the working behind a RNN is beautifully illustrated at : *
 Using **Keras API of Tensorflow** a model was prepared having layers of LSTM cells stacked onto each other followed by a general **Artificial Neural Network(ANN)**. 
 
 * **ReLU activation function was used in all the layers with dropout ranging from 0.2-0.4**.
+* **Adam Optimizer and MSE(Mean Squared Error) loss function was used.**
 
+Some of our architectures designed using Tensorflow-keras.
+*Tesla's architecture* : 
+
+![](https://github.com/CodingWitcher/Stock_Investment/blob/master/pics_for_readme/Tesla%20architecture.png)
+
+*AMD's architecture* : 
+
+![](https://github.com/CodingWitcher/Stock_Investment/blob/master/pics_for_readme/AMD%20architecture.png)
+
+Once the model was trained we analyzed the loss and predicted prices from the data of the test set(or validation set where test set was not provided).
+
+*Exceprt from AMD's notebook. This was our loss in prediction. As we can clearly see, it's an exponential decrease*.
+
+![](https://github.com/CodingWitcher/Stock_Investment/blob/master/pics_for_readme/loss%20analysis.png)
+
+# (IX) Results :
+
+**AMD's result** : 
+
+![](https://github.com/CodingWitcher/Stock_Investment/blob/master/pics_for_readme/AMD_result.png)
+
+Full view : 
+
+![](https://github.com/CodingWitcher/Stock_Investment/blob/master/pics_for_readme/amd_full_view.png)
+
+**Tesla's result** : 
+
+![](https://github.com/CodingWitcher/Stock_Investment/blob/master/pics_for_readme/Tesla_result.png)
+
+Full View : 
+
+![](https://github.com/CodingWitcher/Stock_Investment/blob/master/pics_for_readme/tesla_full_view.png)
+
+# (X) Conclusion : 
+
+The prices were predicted to a considerable accuracy and all this was integrated on a website the team designed using **Django**. 
+
+**Link** : 
+
+Thank you for reading this far !!
+
+![](https://github.com/CodingWitcher/Stock_Investment/blob/master/pics_for_readme/thank-you-1606941_960_720.jpg)
