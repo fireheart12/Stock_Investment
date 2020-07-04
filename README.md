@@ -1,4 +1,4 @@
-## Stock_Investment
+# Stock_Investment
 
 ![](https://github.com/CodingWitcher/Stock_Investment/blob/master/pics_for_readme/dollar-517113_960_720.webp)
 
@@ -8,3 +8,14 @@ Stock market prediction is the act of trying to determine the future value of a 
 
 In this endeavor we will work with historical data about the stock prices of few publicly listed companies and implement machine learning based on **Long Short Term Memory(LSTM)** to predict the future stock prices. 
 
+# (II) Dataset Used : 
+
+The dataset was made publically available on *Kaggle* platform. The Google's stock prices were taken from *SuperDataScience* webpage. 
+* **AMD** : **https://www.kaggle.com/gunhee/amdgoogle**
+* **Tesla** : **https://www.kaggle.com/rpaguirre/tesla-stock-price**
+
+The others have been uploaded in their respective subfolder for easy access. 
+
+Insights from the datasets : 
+
+****
