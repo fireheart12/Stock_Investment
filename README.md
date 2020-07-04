@@ -86,7 +86,7 @@ Excerpt from Tesla's data :
 
 ![](https://github.com/CodingWitcher/Stock_Investment/blob/master/pics_for_readme/Tesla%20entries.png)
 
-Also, open, close, day's max and day's min were found highly correlated which is otherwise obvious too. However, just to visualize this we plotted the correlation extent using Seaborn's **heatmap**.
+Also, open, close, day's max and day's min were found highly correlated which is otherwise obvious too. However, just to visualize this we plotted the extent of feature correlations using Seaborn's **heatmap**.
 
 *Tesla's heatmap*
 
@@ -126,7 +126,7 @@ MinMaxScaler in action :
 
 ## (VII) Configuring The Dataset For Deep Learning : 
 
-Since we had planned to use an LSTM model for time-series prediction, the conversion of dataset's shape from 1-D to 3-D tensor became mandatory. For this we grouped the values from the past **time_step** days into one and stacked such units one behind each other.
+Since we had planned to use an LSTM model for time-series prediction, the conversion of dataset's shape from 1-D to 3-D tensor became mandatory. For this we grouped the values from the past **time_step** days into one and stacked such units one behind the other.
 
 *Tensor shapes illustration* : 
 
