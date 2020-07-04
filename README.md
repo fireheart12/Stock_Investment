@@ -118,7 +118,7 @@ An illustration :
 
 ![](https://github.com/CodingWitcher/Stock_Investment/blob/master/pics_for_readme/scaling.png)
 
-*In a nutshell, scaling helps our optimization algorithm converge faster on our data*. In the figure we can see the skeweness of the data distribution decreases a lot after scaling, as a result of which gradient descent(optimization algorithm) converges faster.
+*In a nutshell, scaling helps our optimization algorithm converge faster on our data*. **In the figure we can see the skeweness of the data distribution decreases a lot after scaling, as a result of which gradient descent(optimization algorithm) converges faster**.
 
 ![](https://github.com/CodingWitcher/Stock_Investment/blob/master/pics_for_readme/scalingII.png)
 
@@ -129,5 +129,13 @@ MinMaxScaler in action :
 ![](https://github.com/CodingWitcher/Stock_Investment/blob/master/pics_for_readme/scalingIII.png)
 
 ## (VII) Configuring The Dataset For Deep Learning : 
+
+Since we had planned to use an LSTM model for time-series prediction, the conversion of dataset's shape from 1-D to 3-D tensor became mandatory. For this we grouped the values from the past **time_step** days into one and stacked such units one behind each other.
+
+*Tensor shapes illustration* : 
+
+![](https://github.com/CodingWitcher/Stock_Investment/blob/master/pics_for_readme/tensors_shapes.png)
+
+## (VIII) Long Short Term Memory - LSTM : 
 
 
