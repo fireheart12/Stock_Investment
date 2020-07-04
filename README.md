@@ -16,6 +16,19 @@ The dataset was made publically available on *Kaggle* platform. The Google's sto
 
 The others have been uploaded in their respective subfolder for easy access. 
 
-Insights from the datasets : 
+Some stock insights from the datasets : 
 
-****
+**AMD** :
+![](https://github.com/CodingWitcher/Stock_Investment/blob/master/pics_for_readme/AMD.png)
+
+**Tesla** : 
+![](https://github.com/CodingWitcher/Stock_Investment/blob/master/pics_for_readme/TESLA.png)
+
+**Amazon** : 
+![](https://github.com/CodingWitcher/Stock_Investment/blob/master/pics_for_readme/Amazon.png)
+
+# (III) Libraries Used : 
+
+
+
+
