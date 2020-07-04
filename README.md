@@ -62,6 +62,12 @@ Is an open source deep learning framework for dataflow and differentiable progra
 
 Is a progress bar library with good support for nested loops and Jupyter notebooks.
 
+## Sci-kit learn : 
+
+Scikit-learn is a free software machine learning library for the Python programming language. It features various classification, regression and clustering algorithms including support vector machines and many more.
+
+![](https://github.com/CodingWitcher/Stock_Investment/blob/master/pics_for_readme/boston-dataset-scikit-learn-machine-learning-python-tutorial.png) 
+
 # (IV) Exploratory Data Analysis(EDA) : 
 
 When we’re getting started with a machine learning (ML) project, one critical principle to keep in mind is that data is everything. It is often said that if ML is the rocket engine, then the fuel is the (high-quality) data fed to ML algorithms. However, deriving truth and insight from a pile of data can be a complicated and error-prone job. To have a solid start for our ML project, it always helps to analyze the data up front.
@@ -103,4 +109,25 @@ Our machine learning model is based on two hyperparameters which are :
 * **Days** : Number of days in the end for which we have to predict the prices for. These will be in our validation/test set.
 
 # (VI) Scaling : 
+
+It refers to putting the values in the same range or same scale so that no variable is dominated by the other.
+
+Most of the times, our dataset contains features highly varying in magnitudes, units and range. But since, most of the machine learning algorithms use Euclidean distance between two data points in their computations, this poses to be a problem. If left alone, these algorithms only take in the magnitude of features neglecting the units. The results would vary greatly between different units, 5kg and 5000gms *for illustration*. *The features with high magnitudes will weigh in a lot more in the distance calculations than features with low magnitudes. To suppress this effect, we need to bring all features to the same level of magnitudes. This can be achieved by scaling.* 
+
+An illustration : 
+
+![](https://github.com/CodingWitcher/Stock_Investment/blob/master/pics_for_readme/scaling.png)
+
+*In a nutshell, scaling helps our optimization algorithm converge faster on our data*. In the figure we can see the skeweness of the data distribution decreases a lot after scaling, as a result of which gradient descent(optimization algorithm) converges faster.
+
+![](https://github.com/CodingWitcher/Stock_Investment/blob/master/pics_for_readme/scalingII.png)
+
+For scaling we will import the **scikit-learn** Python3 machine learning library where we use **MinMaxScaler to scale all the price values beteen 0 and 1, that is the feature range we provided in the code**.
+
+MinMaxScaler in action : 
+
+![](https://github.com/CodingWitcher/Stock_Investment/blob/master/pics_for_readme/scalingIII.png)
+
+## (VII) Configuring The Dataset For Deep Learning : 
+
 
