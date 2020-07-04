@@ -138,4 +138,21 @@ Since we had planned to use an LSTM model for time-series prediction, the conver
 
 ## (VIII) Long Short Term Memory - LSTM : 
 
+Humans don’t start their thinking from scratch every second. As we read this paragraph, we understand each word based on our understanding of previous words. We don’t throw everything away and start thinking from scratch again. Our thoughts have persistence. Traditional neural networks can’t do this, and it seems like a major shortcoming.
+
+**Recurrent Neural Networks(RNNs)** address this issue. They are networks with loops in them, allowing information to persist. 
+
+*A Recurrent Neural Network* :
+
+![](https://github.com/CodingWitcher/Stock_Investment/blob/master/pics_for_readme/RNN-unrolled.png)
+
+**Long Short Term Memory networks – usually just called “LSTMs” – are a special kind of RNN, capable of learning long-term dependencies**.
+
+![](https://github.com/CodingWitcher/Stock_Investment/blob/master/pics_for_readme/LSTM3-chain.png)
+
+The entire process of the working behind a RNN is beautifully illustrated at : **https://colah.github.io/posts/2015-08-Understanding-LSTMs/**
+
+Using **Keras API of Tensorflow** a model was prepared having layers of LSTM cells stacked onto each other followed by a general **Artificial Neural Network(ANN)**. 
+
+* **ReLU activation function was used in all the layers with dropout ranging from 0.2-0.4**.
 
