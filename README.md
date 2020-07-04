@@ -6,7 +6,7 @@
 
 Stock market prediction is the act of trying to determine the future value of a company stock or other financial instrument traded on an exchange. The successful prediction of a stock's future price could yield significant profit. The efficient market hypothesis posits that stock prices are a function of information and rational expectations, and that newly revealed information about a company's prospects is almost immediately reflected in the current stock price. Predicting how the stock market will perform is one of the most difficult things to do. There are so many factors involved in the prediction – physical factors vs. physhological, rational and irrational behaviour, etc. All these aspects combine to make share prices volatile and very difficult to predict with a high degree of accuracy. 
 
-In this endeavor we will work with historical data about the stock prices of few publicly listed companies and implement machine learning based on **Long Short Term Memory(LSTM)** to predict the future stock prices. 
+In this endeavor we worked with historical data about the stock prices of few publicly listed companies and implemented a machine learning model based on **Long Short Term Memory(LSTM)** in order to predict the future stock prices. 
 
 # (II) Dataset Used : 
 
@@ -23,10 +23,6 @@ Some stock insights from the datasets :
 
 **Tesla** : 
 ![](https://github.com/CodingWitcher/Stock_Investment/blob/master/pics_for_readme/TESLA.png)
-
-**Amazon** : 
-
-![](https://github.com/CodingWitcher/Stock_Investment/blob/master/pics_for_readme/Amazon.png)
 
 # (III) Libraries Used : 
 
@@ -104,9 +100,9 @@ This heat map could be used in order to understand the *available stock volume's
 
 # (V) Hyperparameters :
 
-Our machine learning model is based on two hyperparameters which are :
-* **Time Step** : Number of days in the past our model will look at in order to predict the price on the present day. For illustration, if we set *time_step = 7* then for predicting the price on **n th** day, our model will analyze all the prices from **n-1** to **n-7** days. This approach is relatively more accurate than using a traditional machine learning algorithm - *such as polynomial linear regression* - as we consider only recently reported prices rather than the whole dataset at once. 
-* **Days** : Number of days in the end for which we have to predict the prices for. These will be in our validation/test set.
+Our machine learning model was based on two hyperparameters which were :
+* **Time Step** : Number of days in the past our model looked at in order to predict the price on the asked day. For illustration, if we set *time_step = 7* then for predicting the price on **n th** day, our model analyzed all the prices from **n-1** to **n-7** days. This approach is relatively more accurate than using a traditional machine learning algorithm - *such as polynomial linear regression* - as we had considered only the recently reported prices rather than the whole dataset at once. 
+* **Days** : Number of days in the end for which we have to predict the prices for. These were placed in our validation/test set.
 
 # (VI) Scaling : 
 
@@ -170,9 +166,13 @@ Some of our architectures designed using Tensorflow-keras.
 
 Once the model was trained we analyzed the loss and predicted prices from the data of the test set(or validation set where test set was not provided).
 
-*Exceprt from AMD's notebook. This was our loss in prediction. As we can clearly see, it's an exponential decrease*.
+*Excerpt from AMD's notebook. This was our loss in prediction. As we can clearly see, it's an exponential decrease*.
 
 ![](https://github.com/CodingWitcher/Stock_Investment/blob/master/pics_for_readme/loss%20analysis.png)
+
+*Excerpt from Tesla's notebook : *
+
+![](https://github.com/CodingWitcher/Stock_Investment/blob/master/pics_for_readme/tesla_resultt.png)
 
 # (IX) Results :
 
@@ -194,7 +194,7 @@ Full View :
 
 # (X) Conclusion : 
 
-The prices were predicted to a considerable accuracy and all this was integrated on a website the team designed using **Django**. 
+The prices were predicted to a considerable accuracy and all this was integrated on a website the team designed using **Django**. We successfully trained a deep learning architecture based on state of the art LSTM networks in order to predict the prices based on historical understanding of our data. 
 
 **Link** : 
 
